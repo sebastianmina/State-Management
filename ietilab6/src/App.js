@@ -12,7 +12,7 @@ import {
   Route, 
 } from 'react-router-dom'; 
 
-const [state, dispatch] = themeReducer(themeReducer, initialState);
+//const [state, dispatch] = themeReducer(themeReducer, initialState);
 
 function App() {
 
