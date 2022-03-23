@@ -4,11 +4,15 @@ import Login from './components/Login';
 import Task from './components/Task';
 import Welcome from './components/WelcomePage';
 
+import {initialState , themeReducer} from './utils.js'; 
+
 import {
   BrowserRouter as Router, 
   Routes,
   Route, 
 } from 'react-router-dom'; 
+
+const [state, dispatch] = themeReducer(themeReducer, initialState);
 
 function App() {
 
@@ -34,3 +38,4 @@ function App() {
 }
 
 export default App;
+
